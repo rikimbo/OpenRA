@@ -58,7 +58,7 @@ namespace OpenRA.Mods.Common.Graphics
 		public static bool AddExtension => true;
 
 		[Desc("Whether `mod.yaml`'s `TilesetExtensions` should be used with the sequence's file name.")]
-		public static bool UseTilesetExtension { get; private set; }
+		public bool UseTilesetExtension { get; private set; }
 
 		public TilesetSpecificSpriteSequence(ModData modData, string tileSet, SpriteCache cache, ISpriteSequenceLoader loader, string sequence, string animation, MiniYaml info)
 			: base(modData, tileSet, cache, loader, sequence, animation, info) { }
